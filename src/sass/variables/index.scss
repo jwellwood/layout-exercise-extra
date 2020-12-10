@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+// Content
+$number-shown-small: '3';
+$number-shown-large: '5';
+//Colors
+$background: #141414;
+$text: #fff;
+$shadow: #44e94c;
+// Fonts
+$font: 'Jost', sans-serif;
+$font-small: 16px;
+$font-mid: 24px;
+$font-large: 30px;
+$light: 300;
+$bold: 700;
+// Spacing
+$spacing-base: 4px;
+// Breakpoints
+$desktop: 1279px;
+$mid-cut: 1079px;
+$mobile: 539px;
+$small: 350px;

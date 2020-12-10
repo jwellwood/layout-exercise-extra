@@ -1,0 +1,59 @@
+@import './variables';
+
+@mixin baseline {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+  background-color: $background;
+  color: $text;
+  padding: spacing(3);
+  width: 100vw;
+}
+
+@mixin flex(
+  $wrap: wrap,
+  $dir: row,
+  $align-content: center,
+  $align-items: center
+) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+  align-content: $align-content;
+  align-items: $align-items;
+}
+
+@mixin grid($num) {
+  display: grid;
+  grid-template-columns: repeat($num, 1fr);
+}
+
+@mixin image {
+  cursor: pointer;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  &:hover {
+    transition: ease-out 0.5s;
+    box-shadow: -20px 0px 20px 0px $shadow;
+  }
+}
+
+@mixin transition($duration: 0.5s, $scale: 1.3) {
+  transition: ease-in-out $duration;
+  transform: scale($scale);
+}
+
+@mixin button {
+  font-size: $font-small;
+  div {
+    padding: spacing(2) spacing(3);
+    border-radius: spacing(1);
+  }
+  :hover {
+    background: $text;
+    color: $background;
+    cursor: pointer;
+  }
+}
